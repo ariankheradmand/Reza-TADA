@@ -1,0 +1,255 @@
+body {
+    position: relative;
+    margin: 5%;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Vazirmatn', sans-serif;
+  }
+  
+  .header {
+    background-color: #ffffff33;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 420px;
+  }
+  
+  .brand-name {
+    background-color: #ffffff33;
+    padding: 8px;
+    border-radius: 15px;
+  }
+  
+  .brand-name h1 {
+    font-size: 85px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .brand-name h1 span {
+    display: block;
+    background: linear-gradient(#2d6756, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .header .logo {
+    text-align: center;
+  }
+  
+  .header .logo img {
+    max-width: 50%;
+    margin-right: auto;
+  }
+  
+  .hero {
+    background-image: url('./Assets/_DSC0191.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    border-radius: 15px;
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .button-layout {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .button-layout .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-layout .row .button {
+    font-family: 'Vazirmatn', sans-serif;
+    margin: 0 10px;
+    width: 45%;
+    height: 55px;
+    padding: 10px 20px;
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+  }
+  
+  .paragraph-area {
+    padding: 20px;
+    font-size: 21px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    color: white;
+    line-height: 1.7;
+    text-align: center;
+  }
+  
+  .image-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+  
+  .image-boxes .box {
+    flex-basis: 30%;
+    padding: 20px;
+  }
+  
+  .image-boxes .box img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .product_boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .product_boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .product_boxes .box img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .product_boxes .box .box-title {
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    width: 90%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 130%;
+    color: white;
+  }
+  
+  .coming-soon {
+    width: 100%;
+    border: 1px dotted white;
+    padding: 10px 0px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .2);
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .footer .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-buttons img {
+    width: 36px;
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    z-index: -1;
+    background-image: url("./Assets/Background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .video-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .header {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .brand-name h1 {
+      font-size: 48px;
+    }
+  
+    .header .logo img {
+      max-width: 100%;
+    }
+    .hero {
+      height: 400px;
+      margin: 5%;
+    }
+  
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .button-layout .row .button {
+      width: 100%;
+    }
+  
+    .image-boxes .box {
+      flex-basis: 100%;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .brand-name h1 {
+      font-size: 36px;
+    }
+  
+    .hero h1 {
+      font-size: 18px;
+    }
+  
+    .button-layout .row .button {
+      font-size: 18px;
+      height: 45px;
+      padding: 8px 15px;
+    }
+  
+    .paragraph-area {
+      font-size: 18px;
+    }
+  
+  }
+  
