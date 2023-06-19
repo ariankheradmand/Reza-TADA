@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 420px;
+    height: auto;
   }
   
   .brand-name {
@@ -47,23 +47,11 @@ body {
   }
   
   .header .logo img {
-    max-width: 50%;
+    max-width: 35%;
     margin-right: auto;
   }
   
-  .hero {
-    background-image: url('./Assets/_DSC0191.JPG');
-    background-size: cover;
-    background-position: center;
-    height: 550px;
-    border-radius: 15px;
-    margin: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-  }
+
   
   .hero h1 {
     font-size: 36px;
@@ -111,7 +99,7 @@ body {
   
   .image-boxes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin: 40px 0;
   }
@@ -145,19 +133,30 @@ body {
   }
   
   .product_boxes .box img {
-    width: 100%;
+    width: 85%;
     border-radius: 15px;
   }
   
   .product_boxes .box .box-title {
-    position: absolute;
     font-size: 28px;
     font-weight: bold;
-    width: 90%;
+    width: 100%;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-bottom: 130%;
     color: white;
+  }
+  .product_boxes .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product_boxes .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   
   .coming-soon {
@@ -165,11 +164,15 @@ body {
     border: 1px dotted white;
     padding: 10px 0px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .5);
   }
   
   .footer {
     background-color: #333;
+    opacity: 0.95;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 26px;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -215,13 +218,40 @@ body {
     background-size: cover;
   }
   .video-container {
-    width: 85%;
+    width: 45%;
     margin: 0 auto;
   }
   
   /* Media Queries */
+
   
   @media screen and (max-width: 768px) {
+    .footer {
+      font-size: 20px;
+    }
+
+     /* desktop responsive  */
+     .product_boxes .box img {
+      width: 100%;
+      border-radius: 15px;
+    }
+     .product_boxes .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+     .image-boxes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 40px 0;
+    }
+    .video-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
     .header {
       height: auto;
       padding: 10px;
@@ -251,6 +281,11 @@ body {
     .image-boxes .box {
       flex-basis: 100%;
     }
+    .paragraph-area {
+      padding: 20px;
+      font-size: 32px;
+      text-align: center;
+  }
   
   }
   
